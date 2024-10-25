@@ -12,7 +12,7 @@ function Navbar(){
             </div>
             <div className="container">
             <div className="navbar-brand">
-            <a href="index.html">Home</a>
+            <a href="index.html">.</a>
             </div>
             <div>
             <nav class="navbar">

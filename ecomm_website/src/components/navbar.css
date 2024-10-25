@@ -72,7 +72,18 @@ li {
     /* overflow: hidden;  */
     text-decoration: none; 
 }
-
+.navbar-brand a::before {
+    content: "Home";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: rgba(0, 0, 0, 0.692);
+    transition: transform 1s ease;
+    -webkit-transition: transform 1s ease;
+    -moz-transition: transform 1s ease;
+    -ms-transition: transform 1s ease;
+    -o-transition: transform 1s ease;
+}
 .navbar-brand a::after {
     content: "Home";
     position: absolute;
@@ -85,13 +96,20 @@ li {
     letter-spacing: 0.09rem;
     color: #DB4444;
     transform: translateY(-200%);
-    transition: transform 0.3s ease;
+    transition: transform 1s ease;
     -webkit-transform: translateY(-200%);
     -moz-transform: translateY(-200%);
     -ms-transform: translateY(-200%);
     -o-transform: translateY(-200%);
+    -webkit-transition: transform 1s ease;
+    -moz-transition: transform 1s ease;
+    -ms-transition: transform 1s ease;
+    -o-transition: transform 1s ease;
 }
-
+.navbar-brand a:hover::before {
+    transform: translateY(100%); 
+    color: transparent;
+}
 .navbar-brand a:hover::after {
     transform: translateY(0); 
     z-index: 1;

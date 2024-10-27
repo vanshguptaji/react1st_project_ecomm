@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import './navbar.css'
 
-function Navbar() {
+function Navbar({setShow}) {
     console.log();
 
     return (
@@ -12,7 +12,7 @@ function Navbar() {
                 <NavLink to = "/">SHOP NOW</NavLink>
             </div>
             <div className="container">
-                <div className="navbar-brand">
+                <div className="navbar-brand" onClick={()=>setShow(false)}>
                     <NavLink to="/">.</NavLink>
                   
                 </div>
@@ -23,7 +23,7 @@ function Navbar() {
                                 <NavLink to="/Wishlist"><i class="fa-regular fa-heart"></i></NavLink>
                                 
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item" onClick={()=>setShow(true)}>
                                <NavLink to="/Addtocart"> <i class="fa-solid fa-cart-shopping"></i></NavLink> 
                             </li>
                         </ul>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import './navbar.css'
 
 function Navbar() {
@@ -9,22 +9,22 @@ function Navbar() {
         <section className="section-navbar">
             <div className="above-nav">
                 <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
-                <a href="">SHOP NOW</a>
+                <NavLink to = "/">SHOP NOW</NavLink>
             </div>
             <div className="container">
                 <div className="navbar-brand">
-                    <Link to="/"><a>.</a></Link>
+                    <NavLink to="/">.</NavLink>
                   
                 </div>
                 <div>
                     <nav class="navbar">
                         <ul>
                             <li class="nav-item">
-                                <Link to="/"><i class="fa-regular fa-heart"></i></Link>
+                                <NavLink to="/Wishlist"><i class="fa-regular fa-heart"></i></NavLink>
                                 
                             </li>
                             <li class="nav-item">
-                               <Link to="/"> <i class="fa-solid fa-cart-shopping"></i></Link> 
+                               <NavLink to="/Addtocart"> <i class="fa-solid fa-cart-shopping"></i></NavLink> 
                             </li>
                         </ul>
                     </nav>

@@ -6,17 +6,16 @@ import Footer from './components/footer'
 import Buynow from './components/buynow'
 import BestSelling from './components/bestselling'
 
-function Home({handleClick}) {
-
-
-  return (
-    <>
-    <Navbar/>
-    <BestSelling handleClick={handleClick}/>
-    <Buynow/>
-    <Footer/>
-    </>
-  )
-}
-
-export default Home
+function Wishlist() {
+    const [count, setCount] = useState(0)
+  
+    return (
+      <>
+      <Navbar/>
+      <Footer/>
+      </>
+    )
+  }
+  
+  export default Wishlist
+  

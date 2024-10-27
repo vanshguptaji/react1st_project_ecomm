@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import './cards.css'
 
-function Cards({productname = "unnamed", discount = "none", dprice = "950", price = "1150"}) {
+function Cards({item, handleClick}) {
+
+    const  {productname , discount, dprice , price}= item;
+
     return (
         <section className="cards-section">
             <div class="product-card">
@@ -15,7 +18,7 @@ function Cards({productname = "unnamed", discount = "none", dprice = "950", pric
                 </div>
 
                 <div class="add-to-cart">
-                    <button><i class="fa-solid fa-cart-shopping"></i>     Add To Cart</button>
+                    <button onClick={() => handleClick(item)}><i class="fa-solid fa-cart-shopping"></i>     Add To Cart</button>
                 </div>
 
                 <div class="product-info">

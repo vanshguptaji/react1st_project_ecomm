@@ -5,15 +5,15 @@ import Cards from './components/cards'
 import Footer from './components/footer'
 import Buynow from './components/buynow'
 import BestSelling from './components/bestselling'
+import Cart from './components/Cart'
 
-function Addtocart() {
-    const [count, setCount] = useState(0)
+function Addtocart({cart, setCart}) {
+
   
     return (
       <>
       <Navbar/>
-      <BestSelling/>
-      <Buynow/>
+      <Cart cart={cart} setCart={setCart} />
       <Footer/>
       </>
     )

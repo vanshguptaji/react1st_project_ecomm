@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useState } from 'react';
 import './cards.css'
 
-function Cards({ }) {
+function Cards({productname = "unnamed", discount = "none", dprice = "950", price = "1150"}) {
     return (
         <section className="cards-section">
             <div class="product-card">
-                <div class="discount-badge">-35%</div>
+                <div class="discount-badge">{discount}</div>
 
                 <div class="product-image">
                     <img src="./src/images/gucci_bag.webp" alt="Gucci duffle bag"/>
@@ -19,10 +19,10 @@ function Cards({ }) {
                 </div>
 
                 <div class="product-info">
-                    <h3>Gucci duffle bag</h3>
+                    <h3>{productname}</h3>
                     <div class="price">
-                        <span class="current-price">$960</span>
-                        <span class="original-price">$1160</span>
+                        <span class="current-price">{dprice}</span>
+                        <span class="original-price">{price}</span>
                     </div>
                 </div>
             </div>

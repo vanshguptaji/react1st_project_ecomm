@@ -6,17 +6,18 @@ import Footer from './components/footer'
 import Buynow from './components/buynow'
 import BestSelling from './components/bestselling'
 
-function Home() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-    <Navbar/>
-    <BestSelling/>
-    <Buynow/>
-    <Footer/>
-    </>
-  )
-}
-
-export default Home
+function Addtocart() {
+    const [count, setCount] = useState(0)
+  
+    return (
+      <>
+      <Navbar/>
+      <BestSelling/>
+      <Buynow/>
+      <Footer/>
+      </>
+    )
+  }
+  
+  export default Addtocart
+  

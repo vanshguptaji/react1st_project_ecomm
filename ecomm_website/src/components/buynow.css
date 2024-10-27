@@ -1,0 +1,44 @@
+.grid-two--cols{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.grid-three--cols{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.buynow-section{
+    margin: 8rem;
+    background-color: black;
+    padding: 4rem;
+    color: white;
+}
+.jbl_image{
+    border-radius: 5rem;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
+    height: auto;
+}
+h4{
+    color: #00FF66;
+    font-size: 1.8rem;
+}
+h1{
+    font-size: 6.8rem;
+    margin-top: 2rem;
+}
+.content button{
+    background-color: #00FF66;
+    font-size: 2.8rem;
+    margin-top: 2rem;
+    padding: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: white;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}

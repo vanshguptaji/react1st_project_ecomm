@@ -1,0 +1,16 @@
+.bestSelling{
+    padding: 4rem;
+}
+.bestSelling h4{
+    border-left: 2rem solid #DB4444;
+    border-radius: 2px;
+    color: #DB4444;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+.grid-four--cols{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
